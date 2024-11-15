@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --full-width: -webkit-fill-available;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+main {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header{
+    background-color: #ebeb10;
+    width: 334px;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    border: 1px rgb(101, 93, 93) solid;
+    width: 336px;
+    border-radius: 10px;
+}
+.todo-input{
+    background: rgba(196, 196, 196, 0.00);
+    width: var(--full-width);
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 18px;
+
+}
+#clear-button{
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    display: none;
+}
+.add-icon {
+    border: none;
+    color: #fff;
+    background-color: #9953F1;
+    position: absolute;
+    top: 2px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    left: 0;
+    background: transparent;
+   
+}
+.add-controls{
+    position: relative;
+    margin: 10px;
+    border-radius: 15px;
+}
+.deleteButton{
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+.add-todo-btn{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 30px;
+    background-color:blueviolet;
+}
+.sort-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin: 7px;
+    margin-left: 190px;
+}
+
+#sort {
+    background-color: white;
+    height: 25px;
+    border: none;
+}
+
+.sort{
+    background: transparent;
+}
+
+
+ul {
+    list-style: none;
+    border: none;
+    padding: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 10px;
+}
+.input-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+.todoContent {
+    border-radius: 6px;
+    width: 195px;
+    border: 1px solid darkgray;
+    margin-bottom: 20px;
+}
+
+.deleteBtn {
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.deleteBtn:hover {
+    background:blueviolet;
+    color: #fff;
+    border: none;
+}
